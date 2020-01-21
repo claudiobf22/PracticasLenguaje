@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Claudio Blazquez">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <h2>Informacion sobre el producto</h2>
+    <form>
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <label for="Nombre">Nombre</label>
+            <br />
+            <input type="text" name="Nombre" id="Nombre">
+            <br />
+            <label for="Descripcion">Descripcion</label>
+            <br />
+            <textarea name="Descripcion" id="Descripcion" cols="50" rows="6"></textarea>
+            <br />
+            <br />
+            <label for="foto">Foto</label>
+            <input type="file" id="foto">
+            <br />
+            <br />
+            <input type="checkbox" id="tick" name="tick">
+            <label for="tick">Añadir contador de visitas </label>
+        </fieldset>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <label for="dinero">Precio</label>
+            <input type="text" id="dinero" size="1">€
+            <label for="Impuestos">Impuestos</label>
+            <select name="Impuestos" id="Impuestos">
+                <option value="1">4%</option>
+                <option value="2">7%</option>
+                <option value="3">16%</option>
+                <option value="4">25%</option>
+            </select>
+            <br />
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio1">Ninguno</label>
+            <br/>
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio2">Transporte gratuito</label>
+            <br/>
+            <input type="radio" name="radio" id="radio3">
+            <label for="radio3">Descuento 5%</label>
+        </fieldset>
+    </form>
+</body>
+
+</html>

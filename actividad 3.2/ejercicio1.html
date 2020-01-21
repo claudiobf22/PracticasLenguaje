@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Claudio Blazquez Funes">
+    <title>Ejercicio1</title>
+    <style>
+        label {
+
+            margin-top: 0.25em;
+            margin-bottom: 0.25em;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Rellena tu cv</h2>
+    <form>
+        <label for="Nombre">Nombre</label>
+        <br />
+        <input id="Nombre" name="Nombre" type="text">
+        <br />
+        <label for="Apellidos" >Apellidos</label>
+        <br />
+        <input id="Apellidos" name="Apellidos" type="text">
+        <br />
+        <label for="Contraseña">Contraseña</label>
+        <br />
+        <input id="Contraseña" name="Contraseña" type="password">
+        <br />
+        <label for="DNI">DNI</label>
+        <br />
+        <input id="DNI" type="text" name="DNI" size="9">
+        <br />
+        <label>Sexo</label>
+        <br />
+        <input type="radio" name="sexo" id="hombre"><label class="sexo" for="hombre">Hombre</label>
+        <br />
+        <input type="radio" name="sexo" id="mujer"><label class="sexo" for="mujer">Mujer</label>
+        <br />
+        <label for="archivo">Incluir mi foto</label>
+        <input id="archivo" name="file" type="file">
+        <br/>
+        <input type="checkbox">
+        <label>Suscribirme al boletin de novedades</label>
+        <br/>
+        <br/>
+        <input type="submit" name="guardar" value="Guardar cambios">
+        <input type="reset" name="borrar" value="Borrar los datos introducidos">
+        
+    </form>
+
+</body>
+
+</html>

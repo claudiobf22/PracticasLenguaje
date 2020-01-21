@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Claudio Blazquez">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <h2>Rellena tu CV</h2>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="provincia"> Provincia</label>
+            <br />
+            <br />
+            <select name="provincia" id="provincia">
+                <option value="provincia" selected hidden>- selecciona -</option>
+                <optgroup label="Andalucía">
+                    <option value="Jaen">Jaen</option>
+                    <option value="Cordoba">Cordoba</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Huelva">Huelva</option>
+                    <option value="Cadiz">Cadiz</option>
+                    <option value="Malaga">Malaga</option>
+                    <option value="Granada">Granada</option>
+                    <option value="Almeria">Almeria</option>
+                </optgroup>
+            </select>
+            <br />
+            <br />
+            <label for="fecha">Fecha de nacimiento</label>
+            <br />
+            <br />
+            <input type="text" name="fecha" id="fecha" size="1">
+            <select name="number">
+                <option selected hidden>Mes</option>
+                <option value="01">Enero</option>
+                <option value="02">Febrero</option>
+                <option value="03">Marzo</option>
+                <option value="04">Abril</option>
+                <option value="05">Mayo</option>
+                <option value="06">Junio</option>
+                <option value="07">Julio</option>
+                <option value="08">Agosto</option>
+                <option value="09">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+            <input type="text" size="1" name="año">
+            <br />
+            <br />
+            <label for="tema">Tema de interés</label>
+            <br />
+            <br />
+            <select size="3" id="tema" name="tema">
+                <option value="01">Administracion de bases de datos</option>
+                <option value="02">Analisis y programacion</option>
+                <option value="03">Arquitectura</option>
+                <option value="04">Calidad</option>
+                <option value="05">ERP, CRM, Business intelligence</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+
+</html>
