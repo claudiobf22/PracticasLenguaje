@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nuevos controles en los formularios de HMTL5</h1>
+    <form action="POST">
+    <label for="nombre">Nombre (obligatorio)</label>
+    <input type="text" required name="nombre" id="nombre">
+    <label for="Contraseña">Contraseña (obligatoria)</label>
+    <input type="password" name="contraseña" id="Contraseña" required>
+    <label for="tlf">Telefono</label>
+    <input type="text" pattern="953[0-9]{6}" placeholder="(953)-------">
+    <label for="correo">Correo electronico (gmail)</label>
+    <input type="email" name="correo" id="correo">
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
