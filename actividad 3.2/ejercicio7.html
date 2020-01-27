@@ -23,11 +23,54 @@
         <input type="password" name="contraseña" id="Contraseña" required>
         <br />
         <label for="tlf">Telefono</label>
-        <input type="text" pattern="953[0-9]{6}" placeholder="(953)-------">
+        <input type="text" pattern="953[0-9]{6}" id="tlf" name="tlf" placeholder="(953)-------">
         <br />
         <label for="correo">Correo electronico (gmail)</label>
-        <input type="email" name="correo" id="correo">
+        <input type="email" name="correo" id="correo" pattern="*@gmail.com">
 
+        <br />
+        <label for="web">Pagina web: </label>
+        <input type="text" name="web" id="web">
+        <br />
+        <label for="envio">Fecha/hora de envio</label>
+        <input type="datetime-local" name="envio" id="envio"> (minimo 20/01/2020)
+        <br />
+        <label for="resol">Fecha de resolucion</label> 
+        <input type="datetime-local" name="resol" id="resol"> (minimo 20/02/2020)
+        <br />
+        <label for="enviados">Numero de archivos enviados</label>
+        <input type="file" name="enviados" id="enviados">
+        <br />
+        <label for="color">Elige un color</label>
+        <input type="color" name="color" id="color" value="#1AFF00">
+        <br />
+        <label for="clave">Indica la palabra que quieres buscar</label>
+        <input type="text" name="clave" id="clave" placeholder="palabra clave">
+        <br />
+        <label for="puntacion">Puntuacion (entre 0 y 10)</label>
+        <input type="range" min="0" max="10" value="7" name="puntacion" id="puntacion">
+        <br />
+        <br />
+        <fieldset>
+            <legend>Conocimiento de idiomas</legend>
+            <input type="checkbox" name="idiomas" id="idiomas1">
+            <label for="idiomas1">Ingles</label>
+            <br />
+            <input type="checkbox" name="idiomas" id="idiomas2">
+            <label for="idiomas2">Frances</label>
+            <br />
+            <input type="checkbox" name="idiomas" id="idiomas3">
+            <label for="idiomas3">Aleman</label>
+        </fieldset>
+        <br />
+        <input type="radio" name="radio" id="radio1">
+        <label for="radio1">Bajo</label>
+        <br />
+        <input type="radio" name="radio" id="radio2">
+        <label for="radio2">Medio</label>
+        <br />
+        <input type="radio" name="radio" id="radio3">
+        <label for="radio3">Alto</label>
         <br />
         <input type="submit" value="Enviar">
     </form>
