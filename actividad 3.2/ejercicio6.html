@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,19 @@
     <meta name="author" content="Claudio Blazquez Funes">
     <title>Ejercicio 6</title>
     <style>
-        table, tr, th, td{
+        table,
+        tr,
+        th,
+        td {
             border: 1px solid black
-            }
-
+        }
     </style>
 </head>
+
 <body>
     <table style="">
         <tr>
-            <th colspan="2">Identificador de nuevo usuario <input type="text"></th>
+            <th colspan="2">Identificador de nuevo usuario <input type="text" value="usu_012345" readonly></th>
         </tr>
         <tr>
             <td><label for="Nombre">Nombre</label>
@@ -42,9 +46,11 @@
             <td>Aficciones</td>
             <td><input type="checkbox" id="aficcion" name="aficcion">
                 <label for="aficcion">Deporte</label>
-            <input type="checkbox" name="aficcion" id="aficcion1">
-            <label for="aficcion1">Lectura</label>
-        <input type="checkbox" name="aficcion" id="aficcion2"></td>
+                <input type="checkbox" name="aficcion" id="aficcion1">
+                <label for="aficcion1">Lectura</label>
+                <input type="checkbox" name="aficcion" id="aficcion2">
+                <label for="aficcion2">Cine</label>
+            </td>
         </tr>
         <tr>
             <td>Pais</td>
@@ -59,10 +65,10 @@
             <td>Colores favoritos</td>
             <td>
                 <select name="colores" id="colores" size="3">
-                <option value="01">Rojo</option>
-                <option value="02">Verde</option>
-                <option value="03">Azul</option>
-            </select></td>
+                    <option value="01">Rojo</option>
+                    <option value="02">Verde</option>
+                    <option value="03">Azul</option>
+                </select></td>
         </tr>
         <tr>
             <td>Subir su foto</td>
@@ -76,11 +82,13 @@
             <td>
                 <input type="reset" name="limpiar">
             </td>
-             <td><input type="submit" name="enviar"></td>
+            <td><input type="submit" name="enviar"></td>
         </tr>
         <tr>
-            <td colspan="2" style="text-align:center;"><input type="button" value="Modificar datos de usuario" disabled></td>
+            <td colspan="2" style="text-align:center;">
+                <input type="button" value="Modificar datos de usuario" id="usuario" name="usuario" disabled></td>
         </tr>
     </table>
 </body>
+
 </html>
