@@ -6,25 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Claudio Blazquez Funes">
     <title>Ejercicio 6</title>
+    <style>
+        table, tr, th, td{
+            border: 1px solid black
+            }
+
+    </style>
 </head>
 <body>
-    <table border>
+    <table style="">
         <tr>
-            <th colspan="2">Identificador de nuevo usuario</th>
+            <th colspan="2">Identificador de nuevo usuario <input type="text"></th>
         </tr>
         <tr>
             <td><label for="Nombre">Nombre</label>
                 <input type="text" id="Nombre">
             </td>
             <td><label for="apellidos">Apellidos</label>
-                <input type="text" id="apellidos"></td>
+                <input type="text" id="apellidos">
             </td>
         </tr>
         <tr>
             <td colspan="2"><input type="email" name="email" id="email"></td>
         </tr>
         <tr>
-            <td><label for="sexo">Sexo</label></td>
+            <td>Sexo</td>
             <td>
                 <input type="radio" name="sexo" id="sexo1">
                 <label for="sexo1">Varon</label>
@@ -34,8 +40,10 @@
         </tr>
         <tr>
             <td>Aficciones</td>
-            <td><input type="checkbox" id="" name="aficcion">
+            <td><input type="checkbox" id="aficcion" name="aficcion">
+                <label for="aficcion">Deporte</label>
             <input type="checkbox" name="aficcion" id="aficcion1">
+            <label for="aficcion1">Lectura</label>
         <input type="checkbox" name="aficcion" id="aficcion2"></td>
         </tr>
         <tr>
@@ -62,17 +70,17 @@
         </tr>
         <tr>
             <td>Comentarios personales</td>
-            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+            <td><textarea name="cajatexto" id="cajatexto" cols="30" rows="10"></textarea></td>
         </tr>
         <tr>
             <td>
-                <input type="reset">
+                <input type="reset" name="limpiar">
             </td>
-            <td><input type="submit"></td>
+             <td><input type="submit" name="enviar"></td>
         </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
+        <tr>
+            <td colspan="2" style="text-align:center;"><input type="button" value="Modificar datos de usuario" disabled></td>
+        </tr>
     </table>
 </body>
 </html>

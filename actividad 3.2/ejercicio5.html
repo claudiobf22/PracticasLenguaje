@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Claudio Blázquez Funes">
     <title>Ejercicio 5</title>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 1px black solid;
+            width: 600px;
+        }
+
+        body {
+            margin-left: auto;
+        }
+    </style>
 </head>
+
 <body>
-    <table border="1">
+    <h1>Formulario de alta de usuario</h1>
+    <table>
+        <form>
             <tr>
                 <th colspan="2">Por favor, rellene estos <a href="#">datos</a></th>
             </tr>
@@ -26,14 +43,14 @@
             </tr>
             <tr>
                 <td><label for="cp">Codigo Postal</label></td>
-                <td><input type="text" id="cp" name="cp"></td>
+                <td><input type="text" id="cp" name="cp" size="5"></td>
             </tr>
             <tr>
-               <td><label for="equipo">Equipo Favorito</label></td>
-               <td><input type="radio" id="favorito"name="favorito" id="equipo"><label for="favorito">Real Jaén</label>
-            <input type="radio" name="favorito" id="favorito1"><label for="favorito1">Granada Club</label>
-            <input type="radio" name="favorito" id="equipo2"><label for="equipo2">Club de futbol</label>
-        </td> 
+                <td>Equipo Favorito</td>
+                <td><input type="radio" id="favorito" name="favorito" checked><label for="favorito">Real Jaén</label>
+                    <input type="radio" name="favorito" id="favorito1"><label for="favorito1">Granada Club</label>
+                    <input type="radio" name="favorito" id="equipo2"><label for="equipo2">Club de futbol</label>
+                </td>
             </tr>
             <tr>
                 <td>Musica Favorita</td>
@@ -49,17 +66,20 @@
             <tr>
                 <td>Elige un escritor</td>
                 <td><select name="escritor" id="escritor">
-                    <option value="01">Cervantes</option>
-                </select></td>
+                        <option value="01">Cervantes</option>
+                    </select></td>
             </tr>
             <tr>
                 <td><label for="textarea">¿Algún comentario?</label></td>
                 <td><textarea name="textarea" id="textarea" cols="30" rows="10"></textarea></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Enviar consulta"></td>
-                <td><input type="reset" value="Borrar" ></td>
+                <td style="text-align: right;"><input type="submit" value="Enviar consulta"></td>
+                <td><input type="reset" value="Borrar"></td>
             </tr>
+
+        </form>
     </table>
 </body>
+
 </html>
