@@ -16,3 +16,31 @@ a{
 p a em{
     color: blue;
 }
+.especial{
+    color: purple;
+}
+caption{
+    color:blue;
+}
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td strong,th.especial{
+    color:yellow;
+}
+td{
+    color:green;
+}
+th{
+    color:red;
+}
+#adicional{
+    color:peru;
+}
+div#adicional span#especial{
+    color: purple;
+}
+div#adicional p a{
+    color: green;
+}
