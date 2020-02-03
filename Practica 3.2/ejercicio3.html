@@ -7,47 +7,258 @@
     <title>Ejercicio 3</title>
     <style>
         body{
+            color: green;
             margin: 1em;
+        }
+        body{
+           
         }
         li{
             display: inline;
             
         }
+        td{
+            min-width: 200px;
+        }
+        .titulo{
+            display: block;
+            font-size: 1.5em;
+            font-weight: bold;
+
+        }
+        fieldset{
+            margin-top:1em; 
+        }
     </style>
 </head>
 <body>
+    <form>
     <div style="text-align: center;"> 
         <h2>Formulario de sugerencia o reclamación</h2>
-        <form>
             <input type="button" value="Siguiente">
             <input type="button" value="Siguiente">
             <div style="float: right;">
-            <input type="button" value="Descartar">
+                <input type="button" value="Descartar">
             </div>
             <ol>
-
                 <li>Interesado/a</li>
                 <li>Domicilio Interesado/a</li>
                 <li>Dependencia</li>
-                <br/>
                 <li>Texto</li>
                 <li>Lugar y fecha</li>
-
             </ol>
             <fieldset style="text-align: left;"> 
-                <h2 style="margin: 0;">QUIERO FORMULAR UNA: *</h2>
-                <div style="text-align: center; margin-top: 1em;">
-                    
-                <select name="" id="">
-                <option value="1">Seleccione una opcion</option>
-            </select>
-            </div>
-
+                <label class="titulo" for="formular" style="margin: 0;">QUIERO FORMULAR UNA: *</label>
+                 <div style="text-align: center; margin-top: 1em;"> 
+                    <select name="formular" id="formular">
+                        <option value="1">Seleccione una opcion</option>
+                    </select>
+                </div>
             </fieldset>
-            <fieldset style="margin-top:1em;">
-                        <label for="">Nombre o razon social</label>
-            </fieldset>
-        </form>
     </div>
+            <fieldset style="text-align: left;">
+                <h2>IDENTIFICACION DE LA PERSONA O ENTIDAD INTERESADA</h2>
+                <table>
+                    <tr>
+                        <td><label for="nombre">Nombre o razón social</label></td>
+                        <td><label for="apellidos">Primer Apellido</label></td>
+                        <td><label for="apellidos2">Segundo Apellido</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="nombre" id="nombre"></td>
+                        <td><input type="text" name="apellidos" id="apellidos"></td>
+                        <td><input type="text" name="apellidos2" id="apellidos2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tidentificador">Tipo identificador *</label></td>
+                        <td><label for="identificador">Identificador *</label></td>
+                        <td>Sexo</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tidentificador" id="tidentificador"></td>
+                        <td><input type="text" name="identificador" id="identificador"></td>
+                        <td><input type="radio" name="sexo" id="sexo1"><label for="sexo1">Hombre</label>
+                            <input type="radio" name="sexo" id="sexo2"><label for="sexo2">Mujer</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fechanac">Fecha nacimiento</label></td>
+                        <td><label for="persona">Persona juridica</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="date" name="fechanac" id="fechanac"></td>
+                        <td colspan="2" style="text-align: left;"><input type="checkbox" name="persona" id="persona"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: left;" >Solo en caso de reclamacion sanitaria indique si es:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="reclamacion" id="reclamacion1">
+                            <label for="reclamacion1">Paciente</label>
+                            <input type="checkbox" name="reclamacion" id="reclamacion2">
+                            <label for="reclamacion2">Familiar</label>
+                            <input type="checkbox" name="reclamacion" id="reclamacion3">
+                            <label for="reclamacion3">Otros</label>
+                        </td>
+                        <td>
+                            <p>Metodo de comunicacion preferente</p>
+                            <input type="checkbox" name="comunicacion1" id="comunicacion">
+                            <label for="comunicacion">Correo postal</label>
+                            <input type="checkbox" name="comunicacion1" id="comunicacion2">
+                            <label for="comunicacion">Coreo electronico </label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <label for="correo">Correo electronico</label>
+                            <input type="email" name="correo" id="correo">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <h2>DOMICILIO DE LA PERSONA O ENTIDAD INTERESADA</h2>
+                <table>
+                    <tr>
+                        <td>
+                            Tipo de vía * <br>
+                            <select name="via" id="via">
+                                <option value="via1">Seleccionar tipo de vía</option>
+                            </select>
+                        </td>
+                        <td colspan="2">Nombre de vía<br />
+                            <input type="text" size="45">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="num">Nº/KM</label><br />
+                            <input type="text" name="num" id="num">
+                        </td>
+                        <td><label for="piso"> Piso</label><br />
+                            <input type="text" name="piso" id="piso">
+                        </td>
+    
+                        <td> <label for="escalera">Escalera</label> <br />
+                            <input type="text" name="escalera" id="escalera">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="letra">Letra</label><br />
+                            <input type="text" name="letra" id="letra">
+                        </td>
+                        <td></td>
+                        <td><label for="cp">Código Postal</label><br />
+                            <input type="text" name="cp" id="cp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>País <br />
+                            <select name="pais" id="pais">
+                                <option value="value1">ESPAÑA</option>
+                            </select>
+                        </td>
+                        <td>Provincia <br />
+                            <select name="provincia" id="provincia"> 
+                                <option value="provincia">Seleccionar provincia</option>
+                            </select>
+                        </td>
+    
+                        <td>Municipio <br />
+                            <select name="Municipio" id="Municipio">
+                                <option value="Municipio">Seleccionar Municipio</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="tlf">Telefono</label><br />
+                            <input type="text" id="tlf" name="tlf">
+                        </td>
+    
+                        <td>
+                            <label for="movil"> Movil</label>
+                            <br />
+                            <input type="text" id="movil" name="movil">
+                        </td>
+    
+                        <td> <label for="fax">Fax</label> <br />
+                            <input type="text" name="fax" id="fax">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <table>
+                    <tr>
+                        <td><label for="materia">Materia</label>
+                        </td>
+
+                        <td><label for="organismo">Consejeria/Organismo *</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="materia" id="materia">
+                                <option value="value1">Seleccionar materia</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <select name="organismo" id="organismo">
+                                <option value="organismo1">Seleccionar Organismo</option>
+                            </select>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="provincia2">Provincia</label></td>
+
+                        <td><label for="Municipio1">Municipio</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="provincia2" id="provincia2">
+                                <option value="provincia1">Seleccionar provincia</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <select name="Municipio1" id="Municipio1">
+                                <option value="Municipio1">Seleccionar Municipio</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Centro</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <select name="centro" id="centro">
+                                <option value="centro1"> Seleccionar centro</option>
+                            </select>
+                        </td>
+    
+                    </tr>
+    
+                </table>
+            </fieldset>
+            <fieldset>
+                <h2>TEXTO DE LA SUGERENCIA O RECLAMACION(*)</h2>
+                <label for="sugerencia">Descripcion</label><br>
+                <textarea name="sugerencia" id="sugerencia" cols="70" rows="10"></textarea>
+            </fieldset>
+            <fieldset style="text-align: center;">
+                <label class="titulo" for="fecha" style="text-align: left;">
+                   LUGAR Y FECHA
+                </label>
+                En <input type="text" id="fecha" name="fecha"> a <input type="date" name="fecha" id="fecha1">
+            </fieldset>
+            <div style="text-align: center; margin: 10px;">
+                <input type="button" value="Siguiente">
+                <input type="reset" value="Limpiar">
+                <input type="button" value="Descartar" style="float:right">
+            </div>
+        </form>
+    
 </body>
 </html>
