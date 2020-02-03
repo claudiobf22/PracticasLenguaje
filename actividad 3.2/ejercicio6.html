@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,4 +84,99 @@
         </tr>
     </table>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Claudio Blazquez Funes">
+    <title>Ejercicio 6</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black
+        }
+    </style>
+</head>
+
+<body>
+    <table style="">
+        <tr>
+            <th colspan="2">Identificador de nuevo usuario <input type="text" value="usu_012345" readonly></th>
+        </tr>
+        <tr>
+            <td><label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre">
+            </td>
+            <td><label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Sexo</td>
+            <td>
+                <input type="radio" name="sexo" id="sexo1">
+                <label for="sexo1">Varon</label>
+                <input type="radio" name="sexo" id="sexo2">
+                <label for="sexo2">Mujer</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Aficciones</td>
+            <td><input type="checkbox" id="aficcion" name="aficcion">
+                <label for="aficcion">Deporte</label>
+                <input type="checkbox" name="aficcion" id="aficcion1">
+                <label for="aficcion1">Lectura</label>
+                <input type="checkbox" name="aficcion" id="aficcion2">
+                <label for="aficcion2">Cine</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Pais</td>
+            <td>
+                <select name="pais" id="pais">
+                    <option value="01">España</option>
+                    <option value="02">Alemania</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Colores favoritos</td>
+            <td>
+                <select name="colores" id="colores" size="3">
+                    <option value="01">Rojo</option>
+                    <option value="02">Verde</option>
+                    <option value="03">Azul</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Subir su foto</td>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td>Comentarios personales</td>
+            <td><textarea name="cajatexto" id="cajatexto" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="reset" name="limpiar">
+            </td>
+            <td><input type="submit" name="enviar"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center;">
+                <input type="button" value="Modificar datos de usuario" id="usuario" name="usuario" disabled></td>
+        </tr>
+    </table>
+</body>
+
+>>>>>>> 7e4276f87da0f0fcab58c4c97b5acf41ab39af60
 </html>

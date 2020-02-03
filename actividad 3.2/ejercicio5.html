@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,4 +75,90 @@
         </form>
     </table>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Claudio Blázquez Funes">
+    <title>Ejercicio 5</title>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 1px black solid;
+            width: 600px;
+        }
+
+        body {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de alta de usuario</h1>
+    <table>
+        <form>
+            <tr>
+                <th colspan="2">Por favor, rellene estos <a href="#">datos</a></th>
+            </tr>
+            <tr>
+                <td><label for="Nombre">Nombre</label></td>
+                <td><input type="text" id="Nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="apellidos">Apellidos</label></td>
+                <td><input type="text" id="apellidos"></td>
+            </tr>
+            <tr>
+                <td><label for="direccion">Direccion</label></td>
+                <td><input type="text" id="direccion" name="direccion"></td>
+            </tr>
+            <tr>
+                <td><label for="cp">Codigo Postal</label></td>
+                <td><input type="text" id="cp" name="cp" size="5"></td>
+            </tr>
+            <tr>
+                <td>Equipo Favorito</td>
+                <td><input type="radio" id="favorito" name="favorito" checked><label for="favorito">Real Jaén</label>
+                    <input type="radio" name="favorito" id="favorito1"><label for="favorito1">Granada Club</label>
+                    <input type="radio" name="favorito" id="equipo2"><label for="equipo2">Club de futbol</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Musica Favorita</td>
+                <td>
+                    <input type="checkbox" name="musica" id="musica">
+                    <label for="musica">Rock</label>
+                    <input type="checkbox" name="musica" id="musica1">
+                    <label for="musica1">Pop</label>
+                    <input type="checkbox" name="musica" id="musica2">
+                    <label for="musica2">Tecno</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Elige un escritor</td>
+                <td><select name="escritor" id="escritor">
+                        <option value="01">Cervantes</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="textarea">¿Algún comentario?</label></td>
+                <td><textarea name="textarea" id="textarea" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><input type="submit" value="Enviar consulta"></td>
+                <td><input type="reset" value="Borrar"></td>
+            </tr>
+
+        </form>
+    </table>
+</body>
+
+>>>>>>> 7e4276f87da0f0fcab58c4c97b5acf41ab39af60
 </html>
