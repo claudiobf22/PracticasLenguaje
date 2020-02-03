@@ -1,0 +1,13 @@
+.pregunta{
+    font-family: Verdana;
+    font-size: 14px;
+    font-style: italic;
+    color:#0000aa;
+}
+.respuesta{
+    font-family: verdana;
+    font-size: 14px;
+    font-style: normal;
+    text-justify: justify;
+    color: #555555;
+}

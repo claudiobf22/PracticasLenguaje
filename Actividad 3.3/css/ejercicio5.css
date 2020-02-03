@@ -1,0 +1,18 @@
+#titulo{
+  color:  cadetblue;  
+}
+p strong{
+    color:red;
+}
+#subtitulo{
+    color:blue;
+}
+.destacado{
+    color:peru;    
+}
+a{
+    color: red;
+}
+p a em{
+    color: blue;
+}
