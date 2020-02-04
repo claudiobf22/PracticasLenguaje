@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="jcchg">
+    <title>Document</title>
+    <style>
+        table, tr, td{
+            border: 3px;
+            border-color: grey;                       
+            border-style: solid;
+            border-collapse:  collapse;
+
+        }
+        div {            
+            text-align: center;            
+        }
+        table{
+            color: black;
+        }
+        #rojo{
+            background-color: #FF0000;
+        }
+        #verde{
+            background-color: #00FF00;
+        }
+        #azul{
+            background-color: #11CCCC;
+        }
+        #verdeosc{
+            background-color: #22AA22;
+        }
+        #morado{
+            background-color: #BB00BB;
+        }
+        #amarillo{
+            background-color: #AABB00;
+        }
+    </style>
+    
+</head>
+<body>     
+    <div>  
+        <table>
+            <caption>Ejemplo de tabla con colores distintos en cada celda</caption>
+            <thead>
+                <tr>
+                    <th>Color 1</th>
+                    <th>Color 2</th>
+                    <th>Color 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="rojo">Color #FF0000</td>
+                    <td id="verde">Color #00FF00</td>
+                    <td rowspan="2">Color #00FFAA</td>
+                </tr>
+                <tr>
+                    <td id="azul">Color #11CCCC</td>
+                    <td id="verdeosc">Color #22AA22</td>                
+                </tr>
+                <tr>
+                    <td colspan="2" id="amarillo">#Color #AABB00 </td>                
+                    <td id="morado">Color #BB00BB</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Con este ejemplo de pie de tabla se puede ver que se amplía el tamaño para incluir el texto</td>                
+                </tr>
+            </tfoot>               
+        </table>
+    </div> 
+</body>
+</html>
