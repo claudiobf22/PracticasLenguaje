@@ -1,5 +1,5 @@
 table, tr, td{
-    border: 1px solid black;
+    border: 3px solid black;
     border-collapse: collapse;
 }
 h1{
@@ -19,6 +19,16 @@ img{
     height: 50%;
 }
 .columna{
-    background-color: red;
+    background-color: red !important;
     color: white;
+}
+tr.memoria td{
+    background-color: gray;
+}
+
+#horas{
+    background-color: lightblue;
+}
+#horas1{
+    background-color: yellow;
 }

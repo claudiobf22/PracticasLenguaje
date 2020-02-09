@@ -1,0 +1,32 @@
+table, tr,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+a:visited{
+    color: red;
+}
+table td:first-child{
+    background-color: green;
+}
+table td:first-child:hover{
+    font-size: 200%;
+}
+table th:first-letter{
+    font-size: 200%;
+}
+button:hover{
+    background-color: green;
+    color: greenyellow;
+}
+input:required{
+    border: red 1px solid;
+}
+table tr:nth-child(5) td:nth-child(2){
+    text-align: center;
+    background-color: yellow;
+    font-weight: bold;
+}

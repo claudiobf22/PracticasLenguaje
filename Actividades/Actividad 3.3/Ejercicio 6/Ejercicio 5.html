@@ -6,17 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Santiago">
     <title>Ejercicio5</title>
-    <style>
-        table, tr,td{
-            border: 2px solid black;
-            border-collapse: collapse;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/ejercicio5act3.1.css">
 </head>
 <body>
-    <h1>Horario de primero de DAM. Curso 2019/20</h1>
+    <fieldset>
+    <h1>HORARIO DE 1º DE DAM Curso 2019/20</h1>
     <table>
-        <thead>
             <tr>
                 <th></th>
                 <th>Lunes</th>
@@ -25,8 +20,6 @@
                 <th>Jueves</th>
                 <th>Viernes</th>
             </tr>
-        </thead>
-        <tbody>
             <tr>
                 <td>8:15 - 9:15</td>
                 <td rowspan="2">Lenguaje de Marcas</td>
@@ -70,7 +63,16 @@
             <tr>
                 <td>13:45 - 14:45</td>
             </tr>
-        </tbody>
     </table>
+    <form>
+        <br/>
+        <a href="https://www.iesvirgendelcarmen.com">Enlace a la página del instituto</a><br/>
+        <label for="tlf">Telefono</label>
+        <input required type="text" name="tlf" id="tlf">
+        <br/> 
+        <br/>
+        <button type="submit">Enviar horario</button>
+    </form>
+</fieldset>
 </body>
 </html>
