@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Claudio Blazquez Funes">
+    <title>Ejercicio1</title>
+    <style>
+        div.verde {
+            background-color: green;
+            height: 10em;
+            width: 19em;
+        }
+
+        p.amarillo {
+            padding: 1em;
+            background-color: gold;
+        }
+
+        img {
+            height: auto;
+            width: 30em;
+        }
+
+        .bloqueado {
+            display: block;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .table {
+            border: 1px solid black;
+            display: table-cell;
+        }
+
+        .row {
+            display: table-row;
+        }
+
+        .cell {
+            display: table-cell;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="verde">
+    </div>
+    <p class="amarillo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestiae dolorem sapiente culpa! Neque autem
+        dolor recusandae possimus sed quisquam earum repellat aperiam facere commodi modi molestiae molestias unde
+        obcaecati vero harum, incidunt, architecto distinctio quia in animi et ratione vitae temporibus? Ipsum obcaecati
+        ratione laudantium repudiandae, commodi cupiditate minus debitis perferendis tempora aut? Facere illo earum
+        perspiciatis. In, voluptas quaerat libero fugit dolorem cupiditate illum modi, expedita laborum nobis quasi
+        aliquam vel cum velit inventore ab facilis ducimus, minus non. Adipisci animi nemo maxime delectus hic aut
+        fugiat neque, nam tenetur minima corporis dolorum minus voluptate, necessitatibus provident doloremque!
+    </p>
+    <div style="text-align: center;">
+        <p>En este div se incluye una imagen sin modificar el tipo de display, pero centrado</p>
+        <img class="modelo1" src="img/box-model.png" alt="imagen-modelo">
+    </div>
+    <div class="bloqueado">
+        <p>En este div se incluye una imagen centrada modificando el display a block, con la imagen centrada</p>
+        <img src="img/box-model.png" alt="imagen-modelo">
+    </div>
+    <div class="table">
+        <div class="row">
+            <div class="cell">
+                a
+            </div>
+            <div class="cell">
+                b
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                c
+            </div>
+            <div class="cell">
+                d
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

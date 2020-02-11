@@ -1,0 +1,17 @@
+*{
+    color: white;
+}
+p{
+    padding: 3px;
+}
+.parrafo{
+    background-color: green;
+    z-index: 2;
+    position: absolute;
+    left: 30px;
+}
+.parrafo1{
+    background-color: red;
+    z-index: 1;
+    position: relative;
+}
