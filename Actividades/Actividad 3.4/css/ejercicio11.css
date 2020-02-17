@@ -16,10 +16,7 @@ header{
     width:780px;
 }
 article{
-   float: left;
-}
-article{
-    width: 389px;
+    width: 259px;
     height: 10em;
     background-color: grey;
     float: left;

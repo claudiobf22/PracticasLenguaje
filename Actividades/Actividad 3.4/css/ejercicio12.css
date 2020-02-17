@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 75%;
+    margin: auto;
+    height: 10000em;
+}
+img{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+section{
+    clear: both;
+}
+.lista1 li{
+    display: inline;
+}
+nav{
+    position: fixed;
+    top: 0em;
+
+}
+header{
+    margin-top: 2em;
+}
+aside{
+    position: fixed;
+    float: left;
+    left: 0;
+    background-color: green;
+
+}
+li{
+    margin-left: 0 !important;
+    margin: 3px;
+    list-style: none;
+}
+article{
+    background-color: lightsalmon;
+    float: left;
+    border: 1px solid white;
+}
+.articulo{
+    float: left;
+    margin: 1px;
+}
+footer{
+    position: fixed;
+    bottom: 0em;
+    background-color: greenyellow;
+    height: 5em;
+}

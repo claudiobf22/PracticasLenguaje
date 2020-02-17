@@ -1,0 +1,14 @@
+.primero{
+position: absolute;
+height: 20em;
+border: solid 1px pink;
+
+
+}
+
+.segundo{
+    position: absolute;
+    height: 20em;
+    border: solid 1px gray;
+    margin-left:20em ;
+}
