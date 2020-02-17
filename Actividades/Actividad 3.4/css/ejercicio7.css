@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+p::first-letter{
+    float: left;
+    font-size: 3em;
+}
+p{
+    margin: 0;
+}

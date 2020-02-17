@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+.limpieza{
+    clear: both;
+}
+div{
+    float: left;
+    width: 33%;
+}
