@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    color: blue;
+}
+nav{
+    float: right;
+}
+img{
+    height: 30%;
+    width: 30%;
+}
+main{
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.icon{
+    visibility: hidden;
+}
+.main_text{
+    background-color: lightblue;
+    width: 50%;
+}
+.images{
+    width: 50%;
+}

@@ -18,7 +18,9 @@ section{
     display: inline;
 }
 nav{
-    position: fixed;
+    background-color: lightgray;
+    padding: 1em;
+    position: sticky;
     top: 0em;
 
 }

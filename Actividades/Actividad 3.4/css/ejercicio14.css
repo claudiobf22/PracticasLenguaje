@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    width: 50%;
+}
+.filas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.disenocaja{
+    background-color: greenyellow;
+    border: 5px solid black;
+    height: 3em;
+    border-radius: 5px;
+}
+#caja{
+    width: 10%;
+}
+#caja1{
+    width: 70%;
+}
+#caja2{
+    width: 10%;
+}
+#caja3{
+    width: 20%;
+}
+#caja4{
+    width: 10%;
+}
+#caja5{
+    width: 60%;
+}
+#caja6{
+    width: 60%;
+}
+#caja7{
+    width: 20%;
+}
+#caja8{
+    width: 10%;
+}
+#caja9{
+    width: 20%;
+}
+#caja10{
+    width: 10%;
+}
+#caja11{
+    width: 20%;
+}
+#caja12{
+    width: 10%;
+}
+#caja13{
+    width: 20%;
+}
