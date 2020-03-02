@@ -1,0 +1,17 @@
+section{
+    text-align: left !important;
+    margin-left: 5px ;
+}
+dt{
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 1%;
+
+}
+input, fieldset{
+    margin-top: 5px !important;
+    margin-left: 5%;
+}
+#enviar{
+ margin: 1%;
+}

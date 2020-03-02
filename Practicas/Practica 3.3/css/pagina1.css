@@ -1,0 +1,16 @@
+/*Section*/
+
+.cuadricula{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+}
+.cuadricula .item{
+    margin: 5%;
+    border: 1px solid black;
+    border-radius: 2%;
+    background-color: white;
+}
+.cuadricula .item img{
+    width: 40%;
+}
+/*Aside*/
